@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Finn Juhl | Chieftan",
+    "id": 1,
+    "price": "24800",
+    "url": "https://finnjuhl.com/collection/chieftain-chair",
+    "image": "https://bit.ly/3zmd8p8",
+    "description": "The iconic Chieftain chair is one of Finn Juhl’s absolute masterpieces, representing the peak of his career as a furniture designer."
+  },
+  {
+    "name": "Hans Wegner | Papa Bear",
+    "id": 2,
+    "price": "27500",
+    "url": "https://bit.ly/3vjcqFO",
+    "image": "https://bit.ly/2TT7Il4",
+    "description": "The wingback Papa Bear chair, also known as the Teddy Bear chair, has two outstretched arms with wood detailing once described by a critic as “great bear paws embracing you from behind” — hence the name."
+  },
+  {
+    "name": "George Nakashima | Grass-Seated",
+    "id": 3,
+    "price": "7500",
+    "url": "https://bit.ly/3iBey98",
+    "image": "https://bit.ly/3pOmJR7",
+    "description": "George Nakashima's Grass-Seated Chair is perhaps the designer-maker's most innovative design, originally created for MoMA's René d'Harnoncourt in 1943."
+  }
+]
