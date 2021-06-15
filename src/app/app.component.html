@@ -1,3 +1,16 @@
 <header>
   <h1 class="logo">store | products</h1>
 </header>
+<div class="products">
+  <div class="products-list">
+    <div class="product-item" *ngFor="let product of products">
+      <h2>{{ product.name }}</h2>
+      <img [src]="product.image" />
+      {{ product.description }}
+      <div class="buy-products">
+        <h3>{{ product.price | currency }}</h3>
+        <button (click)="triggerCreateCheckout(product)">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
