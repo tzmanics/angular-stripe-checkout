@@ -1,0 +1,3 @@
+[build]
+  publish = "dist/angular-stripe-checkout"
+  command = "ng build --prod"
