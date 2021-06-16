@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import products from './products.json';
 
 @Component({
@@ -8,4 +9,6 @@ import products from './products.json';
 })
 export class AppComponent {
   products: any = products;
+
+  constructor(private http: HttpClient) {}
 }
