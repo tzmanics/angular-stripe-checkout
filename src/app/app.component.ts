@@ -9,6 +9,18 @@ import products from './products.json';
 })
 export class AppComponent {
   products: any = products;
+  private response: any;
 
   constructor(private http: HttpClient) {}
+
+  async triggerCreateCheckout(eventProduct: any) {
+    this.response = await this.http
+      .post('/.netlify/functions/createCheckout', eventProduct, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .toPromise();
+    this.openStripe(this.response);
+  }
 }
