@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { loadStripe } from '@stripe/stripe-js';
 import products from './products.json';
 
 @Component({
@@ -23,4 +24,11 @@ export class AppComponent {
       .toPromise();
     this.openStripe(this.response);
   }
+
+  openStripe = async (stripeParams: any) => {
+    const stripe = await loadStripe(stripeParams.publishableKey);
+    const { error } = await stripe!.redirectToCheckout({
+      sessionId: stripeParams.sessionId,
+    });
+  };
 }
